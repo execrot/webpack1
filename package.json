@@ -1,0 +1,36 @@
+{
+  "name": "skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.26.0",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0",
+    "webpack-cleanup-plugin": "^0.4.1",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1"
+  },
+  "scripts": {
+    "build": "webpack --env=prod",
+    "dev": " ./node_modules/.bin/webpack-dev-server --port 8080 --host 0.0.0.0 --inline --hot",
+    "dev-csw": "node node_modules/http-server/bin/http-server -c0 & webpack --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
