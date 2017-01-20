@@ -1,4 +1,5 @@
-just
+just type
 
-> npm i
-> npm run dev
+> **npm i**
+
+> **npm run dev** $or **npm run build**

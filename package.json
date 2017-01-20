@@ -27,9 +27,9 @@
     "jquery": "^3.1.1"
   },
   "scripts": {
-    "build": "webpack --env=prod",
-    "dev": " ./node_modules/.bin/webpack-dev-server --port 8080 --host 0.0.0.0 --inline --hot",
-    "dev-csw": "node node_modules/http-server/bin/http-server -c0 & webpack --watch"
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": " ./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --hot",
+    "dev-csw": "node node_modules/http-server/bin/http-server -c0 & webpack --watch --config webpack.config.dev.js"
   },
   "author": "",
   "license": "ISC"
